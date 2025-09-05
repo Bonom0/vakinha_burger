@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vakinha_burger/app/core/ui/widgets/vakinha_button.dart';
 import 'package:vakinha_burger/app/core/ui/widgets/vakinha_textformfield.dart';
 
 class SplashPage extends StatelessWidget {
@@ -15,6 +16,8 @@ class SplashPage extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: VakinhaTextformfield(label: 'Text Form'),
           ),
+          const SizedBox(height: 20),
+          VakinhaButton(label: 'Entrar', onPressed: () {}),
         ],
       ),
     );
