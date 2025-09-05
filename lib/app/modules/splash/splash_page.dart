@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vakinha_burger/app/core/ui/widgets/vakinha_appbar.dart';
 import 'package:vakinha_burger/app/core/ui/widgets/vakinha_button.dart';
 import 'package:vakinha_burger/app/core/ui/widgets/vakinha_textformfield.dart';
 
@@ -8,7 +9,7 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Splash')),
+      appBar: VakinhaAppbar(),
       body: Column(
         children: [
           const SizedBox(height: 10),
