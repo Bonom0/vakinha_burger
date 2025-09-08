@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:vakinha_burger/app/core/ui/vakinha_ui.dart';
 import 'package:vakinha_burger/app/core/ui/widgets/vakinha_appbar.dart';
 import 'package:vakinha_burger/app/core/ui/widgets/vakinha_button.dart';
 import 'package:vakinha_burger/app/core/ui/widgets/vakinha_textformfield.dart';
+import 'package:vakinha_burger/app/modules/auth/register/register_controller.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({super.key});
@@ -45,19 +45,10 @@ class RegisterPage extends StatelessWidget {
                     child: VakinhaButton(
                       width: context.width,
                       label: 'CADASTRAR',
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.find<RegisterController>().qualquer();
+                      },
                     ),
-                  ),
-                  const Spacer(),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text('Não possui um conta?'),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text('Cadastre-se', style: VakinhaUI.textBold),
-                      ),
-                    ],
                   ),
                 ],
               ),
