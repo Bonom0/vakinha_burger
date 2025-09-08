@@ -19,14 +19,4 @@ class RegisterController extends GetxController
     messageListener(message);
     super.onInit();
   }
-
-  void qualquer() {
-    message.value = MessageModel(
-      title: 'Teste',
-      message: 'Mensagem teste',
-      type: MessageType.info,
-    );
-    // loading.toggle();
-    // Future.delayed(Duration(seconds: 2), () => loading.toggle());
-  }
 }
