@@ -1,7 +1,8 @@
 import 'package:get/get.dart';
 
 class RestClient extends GetConnect {
-  final _backendBaseUrl = 'http://dartweek.academiadoflutter.com.br';
+  // final _backendBaseUrl = 'http://dartweek.academiadoflutter.com.br';
+  final _backendBaseUrl = 'http://10.0.2.2:8080';
 
   RestClient() {
     httpClient.baseUrl = _backendBaseUrl;
