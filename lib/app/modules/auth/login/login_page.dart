@@ -49,7 +49,9 @@ class LoginPage extends StatelessWidget {
                         children: [
                           Text('Não possui um conta?'),
                           TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Get.toNamed('/auth/register');
+                            },
                             child: Text(
                               'Cadastre-se',
                               style: VakinhaUI.textBold,
